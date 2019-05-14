@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{2020d9a9-0dce-4004-9c45-bbd85e1a0452}</ProjectGuid>
+    <avrdevice>ATSAMD51J19A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>StaticLibrary</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AvrGccProjectExtensions>
+    </AvrGccProjectExtensions>
+    <AssemblyName>ArduinoCore</AssemblyName>
+    <Name>ArduinoCore</Name>
+    <RootNamespace>ArduinoCore</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize for size (-Os)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+      <Value>libarm_cortexM4lf_math.a</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>C:\Users\User\Documents\Atmel Studio\7.0\M4Default\ArduinoCore\variant</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+    </ListValues>
+  </armgcccpp.assembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+</ArmGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>VARIANT_QSPI_BAUD_DEFAULT=50000000</Value>
+      <Value>ADAFRUIT_METRO_M4_EXPRESS</Value>
+      <Value>__SAMD51__</Value>
+      <Value>USB_VID=0x239A</Value>
+      <Value>USB_PID=0x8020</Value>
+      <Value>USBCON</Value>
+      <Value>USB_MANUFACTURER="\"Adafruit LLC\""</Value>
+      <Value>USB_PRODUCT="\"Adafruit Metro M4\""</Value>
+      <Value>__FPU_PRESENT</Value>
+      <Value>ARM_MATH_CM4</Value>
+      <Value>F_CPU=120000000L</Value>
+      <Value>ARDUINO=10807</Value>
+      <Value>ARDUINO_METRO_M4</Value>
+      <Value>ARDUINO_ARCH_SAMD</Value>
+      <Value>ENABLE_CACHE</Value>
+      <Value>MAX_SPI=24000000</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+      <Value>../core</Value>
+      <Value>../variant</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.PrepareDataForGarbageCollection>True</armgcc.compiler.optimization.PrepareDataForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -mfloat-abi=hard  -mfpu=fpv4-sp-d16</armgcc.compiler.miscellaneous.OtherFlags>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>ADAFRUIT_METRO_M4_EXPRESS</Value>
+      <Value>__SAMD51__</Value>
+      <Value>USB_VID=0x239A</Value>
+      <Value>USB_PID=0x8020</Value>
+      <Value>USBCON</Value>
+      <Value>USB_MANUFACTURER="\"Adafruit LLC\""</Value>
+      <Value>USB_PRODUCT="\"Adafruit Metro M4\""</Value>
+      <Value>__FPU_PRESENT</Value>
+      <Value>ARM_MATH_CM4</Value>
+      <Value>F_CPU=120000000L</Value>
+      <Value>ARDUINO=10807</Value>
+      <Value>ARDUINO_METRO_M4</Value>
+      <Value>ARDUINO_ARCH_SAMD</Value>
+      <Value>ENABLE_CACHE</Value>
+      <Value>MAX_SPI=24000000</Value>
+      <Value>VARIANT_QSPI_BAUD_DEFAULT=50000000</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+      <Value>../variant</Value>
+      <Value>../core</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.PrepareDataForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareDataForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.miscellaneous.OtherFlags>-mfloat-abi=hard  -mfpu=fpv4-sp-d16</armgcccpp.compiler.miscellaneous.OtherFlags>
+  <armgcccpp.linker.general.NoStartupOrDefaultLibs>True</armgcccpp.linker.general.NoStartupOrDefaultLibs>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+      <Value>libarm_cortexM4lf_math.a</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../variant</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.memorysettings.ExternalRAM />
+  <armgcccpp.linker.miscellaneous.LinkerFlags>(%24LinkerScript) -mfloat-abi=hard  -mfpu=fpv4-sp-d16</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+    </ListValues>
+  </armgcccpp.assembler.general.IncludePaths>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD51_DFP\1.0.70\include</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="core\" />
+    <Folder Include="core\avr\" />
+    <Folder Include="core\USB\" />
+    <Folder Include="variant\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="core\abi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\avr\dtostrf.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\avr\dtostrf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\avr\interrupt.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\avr\io.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\avr\pgmspace.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\binary.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Client.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\cortex_handlers.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\delay.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\delay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\hooks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\IPAddress.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\IPAddress.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\itoa.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\itoa.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\math_helper.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\math_helper.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\new.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Print.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Print.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Printable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\pulse.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\pulse.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\pulse_asm.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Reset.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Reset.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\RingBuffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\SERCOM.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\SERCOM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Server.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\startup.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Stream.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Stream.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Tone.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Tone.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Uart.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Uart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\Udp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\CDC.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\PluggableUSB.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\PluggableUSB.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\samd21_host.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\samd21_host.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\SAMD21_USBDevice.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\SAMD21_USBDevice.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\SAMR21_USBDevice.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\USBAPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\USBCore.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\USBCore.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\USBDesc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\USB\USB_host.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WCharacter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WInterrupts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WInterrupts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_analog.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_analog.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_constants.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_digital.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_digital.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_private.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_shift.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\wiring_shift.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WMath.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WMath.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WString.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WString.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="core\WVariant.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="variant\pins_arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="variant\variant.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="variant\variant.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
